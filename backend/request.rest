@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksIm5hbWUiOiJvamF5IiwiZW1haWwiOiJyaXpraWppdHVAZ21haWwuY29tIiwiaWF0IjoxNjUwMDg0Mjk1LCJleHAiOjE2NTM2ODQyOTV9.f6v8Hf4Tvg0G8KvOSjQeV4Snj1920HDDkqc_qmrdAQ8
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"oji",
+    "email": "oji@gmail.com",
+    "password":"123",
+    "confPassword":"123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "rizkijitu@gmail.com",
+    "password":"123"
+}
+
+###
+GET  http://localhost:5000/token
